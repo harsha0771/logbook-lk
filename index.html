@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logbook</title>
+  <link rel="stylesheet" href="./static/css/iconfont/tabler-icons.css" />
+  <link rel="stylesheet" href="./static/css/style.css" />
+<link rel="shortcut icon" href="faviconB.ico" type="image/x-icon">
+  <style>
+    /* optional: smooth-scroll offset for fixed header */
+    html { scroll-behavior: smooth; }
+    :target { scroll-margin-top: 90px; }
+  </style>
+</head>
+<body>
+  <!------------------------------>
+  <!-- Header Start -->
+  <!------------------------------>
+  <header class="main-header position-fixed w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl py-0">
+        <div class="logo">
+          <a class="navbar-brand py-0 me-0" href="#home">
+            <img src="./static/assets/images/logo.png" class="head-logo" alt="Logbook" />
+          </a>
+        </div>
+
+        <a
+          class="d-inline-block d-lg-block d-xl-none d-xxl-none nav-toggler text-decoration-none"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <i class="ti ti-menu-2"></i>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#why">Why Logbook</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#modules">Modules</a></li>
+            <li class="nav-item"><a class="nav-link" href="#customers">Customers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a class="btn btn-primary btn-hover-secondery text-capitalize" href="#contact">contact us</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Offcanvas (mobile) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <div class="logo">
+          <a class="navbar-brand py-0 me-0" href="#home"><img src="./static/assets/images/logo.png" alt="Logbook" /></a>
+        </div>
+        <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="ti ti-x"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body pt-0">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why">Why Logbook</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#modules">Modules</a></li>
+          <li class="nav-item"><a class="nav-link" href="#customers">Customers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+        <div class="login d-block align-items-center">
+          <a class="btn btn-primary text-capitalize w-100" href="#contact">contact us</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!------------------------------>
+  <!-- Header End -->
+  <!------------------------------>
+
+  <!------------------------------>
+  <!-- Hero Section Start -->
+  <!------------------------------>
+  <section class="hero-banner position-relative" id="home">
+    <div class="hero-bg-icons"></div>
+    <div class="left-white-overlay position-relative"></div>
+    <div class="right-white-overlay position-relative"></div>
+    <div class="container position-relative">
+      <div class="left-icon">
+        <img src="./static/assets/images/hero/Macbook_color.svg" class="img-fluid position-absolute" alt="" />
+      </div>
+      <div class="right-icon">
+        <img src="./static/assets/images/hero/mobile-icon.svg" class="img-fluid position-absolute" alt="" />
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12 text-center">
+          <div class="hero-title fs-1 fw-bold text-uppercase">
+            RUN YOUR BUSINESS<br />
+            <div class="highlight-hero-title position-relative">
+              <div class="highlight-hero-title-inner">IN ONE PLACE</div>
+            </div>
+            SELL FASTER GROW SMARTER
+          </div>
+          <p class="hero-subtitle fs-5 fw-normal mx-auto mb-0">
+            an intelligent business ecosystem that unifies sales inventory payments and reporting into one seamless platform
+          </p>
+          <div class="hero-action d-flex flex-wrap justify-content-center gap-3 mt-3">
+            <a href="#pricing" class="btn btn-primary btn-hover-secondery text-capitalize fw-normal">start free</a>
+            <a href="#contact" class="btn btn-outline-primary btn-hover-outline-secondery text-capitalize fw-normal">book a demo</a>
+          </div>
+          <div class="scrollspy-icon d-inline-block">
+            <a href="#why">
+              <div class="pulse-animation">
+                <div class="pulse position-relative mx-auto">
+                  <div class="ring"></div>
+                  <div class="ring"></div>
+                  <div class="ring"></div>
+                  <div class="ring"></div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="options bg-white">
+            <div class="row">
+              <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12 col-12 mb-lg-0 mb-md-3 mb-sm-3 mb-3">
+                <a href="#modules" class="option-col d-flex align-items-center text-decoration-none">
+                  <div class="icon"><img src="./static/assets/images/hero/icon_whoweare.svg" class="img-fluid" alt="" /></div>
+                  <span class="ps-4 fw-bold fs-4">Point of Sale</span>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12 col-12 mb-lg-0 mb-md-3 mb-sm-3 mb-3">
+                <a href="#modules" class="option-col d-flex align-items-center text-decoration-none">
+                  <div class="icon"><img src="./static/assets/images/hero/icon_whatwedo.svg" class="img-fluid" alt="" /></div>
+                  <span class="ps-4 fw-bold fs-4">Inventory & Orders</span>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12 col-12 mb-lg-0 mb-md-3 mb-sm-3 mb-3">
+                <a href="#features" class="option-col d-flex align-items-center text-decoration-none">
+                  <div class="icon"><img src="./static/assets/images/hero/icon_ourteam.svg" class="img-fluid" alt="" /></div>
+                  <span class="ps-4 fw-bold fs-4">Analytics & Reports</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!------------------------------>
+  <!-- Hero Section End -->
+  <!------------------------------>
+
+  <!------------------------------------>
+  <!-- Why Logbook Section Start ------>
+  <!------------------------------------>
+  <section class="feature-of-design position-relative" id="why">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12">
+          <h1 class="fw-bold text-uppercase">
+            <span>The</span>
+            <span class="highlight-hero-title position-relative">
+              <span class="highlight-hero-title-inner">platform</span>
+              <div class="team position-absolute">
+                <img src="./static/assets/images/feature-of-design/arrow.svg" class="img-fluid" alt="" />
+                <div class="btn btn-primary text-capitalize fw-normal d-block">product team</div>
+              </div>
+            </span><br />
+            your business runs on
+          </h1>
+          <p class="mb-0 fs-5 lh-base fw-normal">
+            connect sales inventory payments and accounting with real-time dashboards and role-based access.
+            offline-first pos, multi-store management, e-commerce sync, and automated tax-ready invoices so your team works from a single source of truth.
+          </p>
+          <a href="#features" class="btn btn-primary btn-hover-secondery text-capitalize fw-normal mt-4">see features</a>
+        </div>
+        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+          <div class="position-relative img-bg-overlay">
+            <img src="./static/assets/images/feature-of-design/Group 19768 (2).png" class="w-100" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------------------------>
+  <!-- Why Logbook Section End -------->
+  <!------------------------------------>
+
+  <section class="section-bg-icons position-relative">
+    <!------------------------------>
+    <!-- Modules Section Start ---->
+    <!------------------------------>
+    <section class="modules position-relative" id="modules">
+      <div class="container">
+        <h5 class="fs-7 section-subheading text-uppercase text-center fw-500">modules</h5>
+        <div class="fs-2 section-heading text-uppercase fw-bold text-center">
+          everything you need to run and grow
+        </div>
+        <div class="row ourteam-row position-relative">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-6 col-12">
+            <div class="team-card">
+              <div class="team-bg bg-primary d-flex align-items-end justify-content-center">
+                <img src="./static/assets/images/our-team/team1.svg" class="img-fluid" alt="" />
+              </div>
+              <h4 class="text-uppercase fw-bold text-secondary">Point of Sale</h4>
+              <div class="fs-6 text-uppercase text-secondary fw-500">fast checkout • offline ready</div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-6 col-12">
+            <div class="team-card">
+              <div class="team-bg bg-info d-flex align-items-end justify-content-center">
+                <img src="./static/assets/images/our-team/team3.svg" class="img-fluid" alt="" />
+              </div>
+              <h4 class="text-uppercase fw-bold text-secondary">Inventory</h4>
+              <div class="fs-6 text-uppercase text-secondary fw-500">stock control • purchase orders</div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-6 col-12">
+            <div class="team-card">
+              <div class="team-bg bg-warning d-flex align-items-end justify-content-center">
+                <img src="./static/assets/images/our-team/team2.svg" class="img-fluid" alt="" />
+              </div>
+              <h4 class="text-uppercase fw-bold text-secondary">Billing & Invoices</h4>
+              <div class="fs-6 text-uppercase text-secondary fw-500">gst/vat ready • subscriptions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------------>
+    <!-- Modules Section End ------>
+    <!------------------------------>
+
+    <!--------------------------------------->
+    <!-- Awesome Features Section Start ----->
+    <!--------------------------------------->
+    <section class="awasome-feature position-relative" id="features">
+      <div class="container">
+        <h5 class="fs-7 section-subheading text-uppercase fw-500 text-center">our features</h5>
+        <div class="fs-2 section-heading text-uppercase fw-bold text-center">built for modern operations</div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-6 col-12 text-center">
+            <div class="feature-card">
+              <img src="./static/assets/images/features/web-design.svg" alt="" />
+              <h4 class="text-uppercase fw-bold text-secondary pt-4">Multi-store</h4>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-6 col-12 text-center">
+            <div class="feature-card">
+              <img src="./static/assets/images/features/e-commerce.svg" alt="" />
+              <h4 class="text-uppercase fw-bold text-secondary pt-4">E-commerce Sync</h4>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-6 col-12 text-center">
+            <div class="feature-card">
+              <img src="./static/assets/images/features/responsive-design.svg" alt="" />
+              <h4 class="text-uppercase fw-bold text-secondary pt-4">Mobile & Responsive</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-6 col-12 text-center">
+            <div class="feature-card">
+              <img src="./static/assets/images/features/creative.svg" alt="" />
+              <h4 class="text-uppercase fw-bold text-secondary pt-4">Payments & POS</h4>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-6 col-12 text-center">
+            <div class="feature-card">
+              <img src="./static/assets/images/features/freindly-support.svg" alt="" />
+              <h4 class="text-uppercase fw-bold text-secondary pt-4">Friendly Support</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------->
+    <!-- Awesome Features Section End -->
+    <!----------------------------------->
+  </section>
+
+  <!-------------------------------->
+  <!-- Customers Section Start ---->
+  <!-------------------------------->
+  <section class="our-portfolio position-relative" id="customers">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <h5 class="fs-7 section-subheading text-uppercase fw-500">our customers</h5>
+          <div class="fs-2 section-heading text-uppercase fw-bold">teams that run on logbook</div>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <p class="mb-0 fs-4">
+            retailers wholesalers cafes clinics and service businesses streamline daily work with unified sales and inventory.
+            here are a few ways different industries put logbook to work.
+          </p>
+        </div>
+      </div>
+
+      <div class="row portfolio-wrap">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <a href="#" class="d-block portfolio-box text-decoration-none">
+            <div class="portfolio-card"><img src="./static/assets/images/our-portfolio/coco.png" class="w-100" alt="" /></div>
+            <h4 class="text-uppercase fw-bold text-secondary pt-xxl-5 pt-xl-5 pt-lg-5 pt-md-4 pt-sm-4 pt-3">Retail Stores</h4>
+            <h5 class="py-xxl-3 py-xl-3 py-lg-3 py-md-3 py-sm-2 py-2 text-secondary">omnichannel</h5>
+            <p class="mb-0 fs-4 pt-0">click and collect, barcode scanning, low-stock alerts, and daily cash reconciliation.</p>
+          </a>
+
+          <a href="#" class="d-block portfolio-box text-decoration-none">
+            <div class="portfolio-card"><img src="./static/assets/images/our-portfolio/twoagents.png" class="w-100" alt="" /></div>
+            <h4 class="text-uppercase fw-bold text-secondary pt-xxl-5 pt-xl-5 pt-lg-5 pt-md-4 pt-sm-4 pt-3">Delivery & F&B</h4>
+            <h5 class="py-xxl-3 py-xl-3 py-lg-3 py-md-3 py-sm-2 py-2 text-secondary">kitchen + pos</h5>
+            <p class="mb-0 fs-4 pt-0">table orders, modifiers, kitchen tickets, riders, and menu sync across locations.</p>
+          </a>
+
+          <a href="#" class="d-block portfolio-box text-decoration-none">
+            <div class="portfolio-card"><img src="./static/assets/images/our-portfolio/Viametrics_5 1.png" class="w-100" alt="" /></div>
+            <h4 class="text-uppercase fw-bold text-secondary pt-xxl-5 pt-xl-5 pt-lg-5 pt-md-4 pt-sm-4 pt-3">B2B & Metrics</h4>
+            <h5 class="py-xxl-3 py-xl-3 py-lg-3 py-md-3 py-sm-2 py-2 text-secondary">wholesale</h5>
+            <p class="mb-0 fs-4 pt-0">price lists, purchase orders, incoming shipments, and profitability dashboards.</p>
+          </a>
+        </div>
+
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-4 mt-sm-3 mt-0">
+          <a href="#" class="d-block portfolio-box text-decoration-none">
+            <div class="portfolio-card"><img src="./static/assets/images/our-portfolio/Daduo_10 4.png" class="w-100" alt="" /></div>
+            <h4 class="text-uppercase fw-bold text-secondary pt-xxl-5 pt-xl-5 pt-lg-5 pt-md-4 pt-sm-4 pt-3">Hospitality</h4>
+            <h5 class="py-xxl-3 py-xl-3 py-lg-3 py-md-3 py-sm-2 py-2 text-secondary">rooms + pos</h5>
+            <p class="mb-0 fs-4 pt-0">room charges to bills, split payments, and end-of-day reports.</p>
+          </a>
+
+          <a href="#" class="d-block portfolio-box text-decoration-none">
+            <div class="portfolio-card"><img src="./static/assets/images/our-portfolio/Beetlo.png" class="w-100" alt="" /></div>
+            <h4 class="text-uppercase fw-bold text-secondary pt-xxl-5 pt-xl-5 pt-lg-5 pt-md-4 pt-sm-4 pt-3">Baby & Lifestyle</h4>
+            <h5 class="py-xxl-3 py-xl-3 py-lg-3 py-md-3 py-sm-2 py-2 text-secondary">boutiques</h5>
+            <p class="mb-0 fs-4 pt-0">variants, bundles, returns, and loyalty—without spreadsheets.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <a href="#" class="btn btn-primary btn-hover-secondery text-capitalize fw-normal">view more</a>
+        </div>
+      </div>
+    </div>
+    <div><img src="./static/assets/images/our-portfolio/waves.svg" class="w-100 position-relative wave" alt="" /></div>
+  </section>
+  <!-------------------------------->
+  <!-- Customers Section End ------>
+  <!-------------------------------->
+
+  <!------------------------------>
+  <!-- Reviews Section Start ---->
+  <!------------------------------>
+  <section class="pricing-plans position-relative" id="reviews">
+    <div class="container">
+      <h5 class="fs-7 section-subheading text-uppercase fw-500 text-center">reviews</h5>
+      <div class="fs-2 section-heading text-uppercase fw-bold text-center">trusted by growing teams</div>
+      <div class="row card-body bg-white">
+        <div class="col-lg-4 col-md-6 col-12 mb-3">
+          <div class="card border-0 h-100 p-3">
+            <p class="mb-2 fs-6">“logbook replaced five tools for us and gave real-time stock visibility.”</p>
+            <div class="fw-bold">Ayesha — Retail</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-3">
+          <div class="card border-0 h-100 p-3">
+            <p class="mb-2 fs-6">“our cafe runs smoother with pos + kitchen tickets and end-of-day reports.”</p>
+            <div class="fw-bold">Dinuka — F&B</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-3">
+          <div class="card border-0 h-100 p-3">
+            <p class="mb-2 fs-6">“multi-store and purchase orders finally under control.”</p>
+            <div class="fw-bold">Ravi — Wholesale</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------------------>
+  <!-- Reviews Section End ------>
+  <!------------------------------>
+
+  <!--------------------------------->
+  <!-- Pricing Plans Section Start -->
+  <!--------------------------------->
+  <section class="pricing-plans position-relative" id="pricing">
+    <div class="container">
+      <h5 class="fs-7 section-subheading text-uppercase fw-500 text-center">our pricing</h5>
+      <div class="fs-2 section-heading text-uppercase fw-bold text-center">easy and simple<br />pricing plans</div>
+
+      <ul class="nav nav-tabs d-flex justify-content-center border-0" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active text-uppercase border-0 fs-11" id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly" type="button" role="tab" aria-controls="monthly" aria-selected="true">monthly</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-uppercase border-0 fs-11" id="yearly-tab" data-bs-toggle="tab" data-bs-target="#yearly" type="button" role="tab" aria-controls="yearly" aria-selected="false">yearly</button>
+        </li>
+      </ul>
+
+      <div class="tab-content position-relative" id="myTabContent">
+        <!-- Monthly -->
+        <div class="tab-pane fade show active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+          <div class="row card-body bg-white">
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="card border-0 h-100">
+                <div class="price d-flex align-items-end">
+                  <span class="text-secondary fs-3">$20</span><small class="ps-3">/month</small>
+                </div>
+                <div class="card-details">
+                  <h3 class="text-uppercase mb-0 text-secondary overflow-hidden">starter</h3>
+                  <p class="mb-0 fs-8 ps-0">for solo stores getting organized</p>
+                  <ul class="mb-0 list-unstyled ps-0 pt-3">
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle"></i><p class="mb-0 fs-8 text-capitalize">point of sale</p></li>
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle"></i><p class="mb-0 fs-8 text-capitalize">basic inventory</p></li>
+                  </ul>
+                </div>
+                <div class="card-action"><a href="#contact" class="btn btn-light btn-hover-light text-capitalize w-100">start free</a></div>
+              </div>
+            </div>
+
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="card border-0 h-100">
+                <div class="price d-flex align-items-end">
+                  <span class="text-secondary fs-3">$50</span><small class="ps-3">/month</small>
+                </div>
+                <div class="card-details">
+                  <h3 class="text-uppercase mb-0 text-secondary overflow-hidden">growth</h3>
+                  <p class="mb-0 fs-8 ps-0">for growing teams and multiple users</p>
+                  <ul class="mb-0 list-unstyled ps-0 pt-3">
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle"></i><p class="mb-0 fs-8 text-capitalize">pos + inventory</p></li>
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle"></i><p class="mb-0 fs-8 text-capitalize">invoicing</p></li>
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle"></i><p class="mb-0 fs-8 text-capitalize">purchase orders</p></li>
+                  </ul>
+                </div>
+                <div class="card-action"><a href="#contact" class="btn btn-light btn-hover-light text-capitalize w-100">start free</a></div>
+              </div>
+            </div>
+
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 px-lg-3 px-md-3 px-sm-2 px-2">
+              <div class="pro-plan bg-primary position-relative">
+                <span class="badge rounded-pill bg-white text-primary position-absolute text-uppercase fs-11">most popular</span>
+                <div class="price d-flex align-items-end">
+                  <span class="text-white fw-bold fs-3">$100</span><small class="ps-3 text-white">/month</small>
+                </div>
+                <div class="card-details position-relative">
+                  <h3 class="text-uppercase mb-0 text-secondary overflow-hidden text-white">pro</h3>
+                  <p class="mb-0 fs-8 ps-0 text-white">advanced analytics and integrations</p>
+                  <ul class="mb-0 list-unstyled ps-0 pt-3">
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle text-white"></i><p class="mb-0 fs-8 text-capitalize text-white">advanced reports</p></li>
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle text-white"></i><p class="mb-0 fs-8 text-capitalize text-white">integrations</p></li>
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle text-white"></i><p class="mb-0 fs-8 text-capitalize text-white">multi-store</p></li>
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle text-white"></i><p class="mb-0 fs-8 text-capitalize text-white">priority support</p></li>
+                  </ul>
+                </div>
+                <div class="card-action mt-4"><a href="#contact" class="btn btn-light white-btn white-btn-hover text-capitalize w-100">upgrade now</a></div>
+              </div>
+            </div>
+
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="card border-0 h-100">
+                <div class="price d-flex align-items-end">
+                  <span class="text-secondary fs-3">$200</span><small class="ps-3">/month</small>
+                </div>
+                <div class="card-details">
+                  <h3 class="text-uppercase mb-0 text-secondary overflow-hidden">enterprise</h3>
+                  <p class="mb-0 fs-8 ps-0">for large operations and compliance needs</p>
+                  <ul class="mb-0 list-unstyled ps-0 pt-3">
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle"></i><p class="mb-0 fs-8 text-capitalize">all pro features</p></li>
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle"></i><p class="mb-0 fs-8 text-capitalize">api & sso</p></li>
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle"></i><p class="mb-0 fs-8 text-capitalize">custom roles</p></li>
+                    <li class="d-flex align-items-center pb-3"><i class="ti ti-check rounded-circle"></i><p class="mb-0 fs-8 text-capitalize">dedicated success</p></li>
+                  </ul>
+                </div>
+                <div class="card-action"><a href="#contact" class="btn btn-light btn-hover-light text-capitalize w-100">talk to sales</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yearly -->
+        <div class="tab-pane fade" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
+          <!-- (reuse same cards/prices or adjust) -->
+          <div class="row card-body bg-white">
+            <!-- You can duplicate the monthly plans here with discounted prices -->
+            <div class="col-12 text-center">
+              <p class="fs-5">save up to 20% with annual billing — contact sales for yearly plans</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="./static/assets/images/price-plan/Icon_Thorus Knot.png" class="position-absolute float-icon img-fluid" alt="" />
+      </div>
+    </div>
+  </section>
+  <!--------------------------------->
+  <!-- Pricing Plans Section End -->
+  <!--------------------------------->
+
+  <!------------------------------>
+  <!-- Contact Section Start ---->
+  <!------------------------------>
+  <section class="contact position-relative" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
+          <h5 class="fs-7 section-subheading text-uppercase fw-500">contact us now</h5>
+          <div class="fs-2 section-heading text-uppercase fw-bold">
+            questions about migration or pricing<br />we are here to help
+          </div>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
+          <form>
+            <div class="row">
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                  <label class="form-label text-uppercase fs-6 mb-3">Full Name</label>
+                  <input type="text" class="form-control border-0" placeholder="Enter your name" />
+                </div>
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                  <label class="form-label text-uppercase mb-3">email</label>
+                  <input type="email" class="form-control border-0" placeholder="Enter your email" />
+                </div>
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                  <label class="form-label text-uppercase fs-6 mb-3">phone</label>
+                  <input type="text" class="form-control border-0" placeholder="Enter your phone no" />
+                </div>
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                  <label class="form-label text-uppercase mb-3">subject</label>
+                  <select class="form-control border-0">
+                    <option>Select</option>
+                    <option>Sales</option>
+                    <option>Support</option>
+                    <option>Partnerships</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xxl-12 col-xl-12 col-12">
+                <div class="mb-xxl-4 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-3 mb-3">
+                  <label class="form-label text-uppercase mb-3">Message</label>
+                  <textarea class="form-control border-0" placeholder="Enter your message"></textarea>
+                </div>
+              </div>
+              <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"></div>
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-flex justify-content-end">
+                <button class="btn btn-primary btn-hover-secondery text-capitalize mt-2 w-100">submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!------------------------------>
+  <!-- Contact Section End -->
+  <!------------------------------>
+
+  <!------------------------------>
+  <!-- Footer Start -->
+  <!------------------------------>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="footer-logo-col">
+            <a href="#home"><img src="./static/assets/images/logo.png" class="head-logo" alt="Logbook" /></a>
+            <p class="copyrights fs-5 mb-0">Copyright @ <span id="autodate"></span></p>
+            <ul class="social-icons list-unstyled mb-0 pl-0 d-flex align-items-center">
+              <li><a href="#" class="rounded-circle"><img src="./static/assets/images/footer/icon_facebook.svg" alt=""><img src="./static/assets/images/footer/icon_facebook_white.svg" alt=""></a></li>
+              <li><a href="#" class="rounded-circle"><img src="./static/assets/images/footer/icon_twitter.svg" alt=""><img src="./static/assets/images/footer/icon_twitter_white.svg" alt=""></a></li>
+              <li><a href="#" class="rounded-circle"><img src="./static/assets/images/footer/icon_google_plus.svg" alt=""><img src="./static/assets/images/footer/icon_google_plus_white.svg" alt=""></a></li>
+              <li><a href="#" class="rounded-circle"><img src="./static/assets/images/footer/icon_linkdin.svg" alt=""><img src="./static/assets/images/footer/icon_linkdin_white.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+          <h5 class="text-secondary fw-bold fs-4">Quick links</h5>
+          <ul class="list-unstyled mb-0 pl-0">
+            <li><a href="#home" class="text-capitalize fs-6 text-decoration-none">Home</a></li>
+            <li><a href="#why" class="text-capitalize fs-6 text-decoration-none">Why Logbook</a></li>
+            <li><a href="#features" class="text-capitalize fs-6 text-decoration-none">Features</a></li>
+            <li><a href="#modules" class="text-capitalize fs-6 text-decoration-none">Modules</a></li>
+            <li><a href="#customers" class="text-capitalize fs-6 text-decoration-none">Customers</a></li>
+            <li><a href="#pricing" class="text-capitalize fs-6 text-decoration-none">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="col-xxl-5 col-xxl-5 col-lg-5 col-md-8 col-sm-12 col-12">
+          <h5 class="text-secondary fw-bold fs-4">From the blog</h5>
+          <div class="blog mb-3">
+            <p class="mb-0 fs-6">how to move from spreadsheets to a real inventory system in one afternoon</p>
+            <p class="mt-2 fs-6">16 Mar, 2025</p>
+          </div>
+          <div class="blog mb-3">
+            <p class="mb-0 fs-6">five metrics that show your store is growing the right way</p>
+            <p class="mt-2 fs-6">02 Feb, 2025</p>
+          </div>
+          <div class="blog">
+            <a href="#" class="text-decoration-none text-primary text-capitalize fs-6">read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!------------------------------>
+  <!-- Footer End -->
+  <!------------------------------>
+
+  <!------------------------------>
+  <!-- JS Libs -->
+  <!------------------------------>
+  <script src="./static/js/jquery.min.js"></script>
+  <script src="./static/js/bootstrap.min.js"></script>
+  <script src="./static/js/custom.js"></script>
+  <script>
+    // footer year
+    document.getElementById('autodate').textContent = new Date().getFullYear();
+
+    // close offcanvas after clicking a link
+    document.querySelectorAll('.offcanvas .nav-link').forEach(function (a) {
+      a.addEventListener('click', function () {
+        const offcanvasEl = document.getElementById('offcanvasExample');
+        if (offcanvasEl && bootstrap && bootstrap.Offcanvas.getInstance(offcanvasEl)) {
+          bootstrap.Offcanvas.getInstance(offcanvasEl).hide();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
