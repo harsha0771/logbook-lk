@@ -10,7 +10,7 @@ app.use(bodyParser.json({ limit: "100mb" }));
 app.use(bodyParser.urlencoded({ limit: "100mb", extended: true }));
 app.use(cors({ origin: "*" }));
 
-const staticBase = path.resolve('./angular/dist/angular/');
+const staticBase = path.resolve('./public/');
 
 const staticFilesPath = path.join(staticBase, "browser");
 
