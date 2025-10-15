@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logbook</title>
+  <link rel="stylesheet" href="./css/iconfont/tabler-icons.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    :target {
+      scroll-margin-top: 90px;
+    }
+  </style>
+</head>
+
+<body>
+  <app-root></app-root>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/custom.js"></script>
+  <script>
+    // footer year
+    document.getElementById('autodate').textContent = new Date().getFullYear();
+
+    // close offcanvas after clicking a link
+    document.querySelectorAll('.offcanvas .nav-link').forEach(function (a) {
+      a.addEventListener('click', function () {
+        const offcanvasEl = document.getElementById('offcanvasExample');
+        if (offcanvasEl && bootstrap && bootstrap.Offcanvas.getInstance(offcanvasEl)) {
+          bootstrap.Offcanvas.getInstance(offcanvasEl).hide();
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
