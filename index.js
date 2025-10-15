@@ -12,7 +12,7 @@ app.use(cors({ origin: "*" }));
 
 const staticBase = path.resolve('./public/');
 
-const staticFilesPath = path.join(staticBase, "browser");
+const staticFilesPath = path.join(staticBase, "iStudio-1.0.0");
 
 app.use(express.static(staticFilesPath));
 
